@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <p *ngFor = "let obj of mydata">
+    {{obj.ID}} {{obj.Title}}
+  </p>
+
+    <label for="ID">ID: </label>
+    <input #uper type="text" id="ID"><br/>
+    <label for="Title">Title: </label>
+    <input #niche type="text" id="Title"><br/>
+
+    {{uper.value}}
+    {{niche.value}}
+    <button type="submit" (click)="postData(uper.value, niche.value)"> SUBMIT </button>
+  </div>
+
+
